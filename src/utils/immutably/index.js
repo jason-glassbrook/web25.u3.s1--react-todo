@@ -6,7 +6,7 @@
 
 export const toggle = (value) => (!value);
 
-export class Immutably {
+export class immutably {
   // constructor () {
   //   console.log ('--> constructing Immutably is unnecessary <--');
   // }
