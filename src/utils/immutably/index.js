@@ -4,9 +4,9 @@
   A set of helper functions for "mutating" immutable values.
 *******************************************************************************/
 
-const toggle = (value) => (!value);
+export const toggle = (value) => (!value);
 
-class Immutably {
+export class Immutably {
   // constructor () {
   //   console.log ('--> constructing Immutably is unnecessary <--');
   // }
@@ -85,3 +85,6 @@ class Immutably {
     Immutably.toggle (array, index)
   );
 }
+
+/**************************************/
+default export Immutably;
