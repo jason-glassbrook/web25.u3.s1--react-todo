@@ -31,10 +31,10 @@ export class immutably {
     - aliases for easier reading
   --------------------------------------*/
   static setField = (object, field, value) => (
-    Immutably.set (object, field, value)
+    immutably.set (object, field, value)
   );
   static setItem = (array, index, value) => (
-    Immutably.set (array, index, value)
+    immutably.set (array, index, value)
   );
 
   /*--------------------------------------
@@ -45,7 +45,7 @@ export class immutably {
     - the function takes the original object, path, and original value of object[path]
   --------------------------------------*/
   static setBy = (object, path, fun) => (
-    Immutably.set (object, path, fun (object, path, object[path]))
+    immutably.set (object, path, fun (object, path, object[path]))
   );
 
   /*--------------------------------------
@@ -54,10 +54,10 @@ export class immutably {
     - aliases for easier reading
   --------------------------------------*/
   static setFieldBy = (object, field, fun) => (
-    Immutably.setBy (object, field, fun)
+    immutably.setBy (object, field, fun)
   );
   static setItemBy = (array, index, fun) => (
-    Immutably.setBy (array, index, fun)
+    immutably.setBy (array, index, fun)
   );
 
   /***************************************
@@ -70,7 +70,7 @@ export class immutably {
     - toggle the boolean value of one "path" (eg: a field or index)
   --------------------------------------*/
   static toggle = (object, path) => (
-    Immutably.set (object, path, toggle (object[path]))
+    immutably.set (object, path, toggle (object[path]))
   );
 
   /*--------------------------------------
@@ -79,12 +79,12 @@ export class immutably {
     - aliases for easier reading
   --------------------------------------*/
   static toggleField = (object, field) => (
-    Immutably.toggle (object, field)
+    immutably.toggle (object, field)
   );
   static toggleItem = (array, index) => (
-    Immutably.toggle (array, index)
+    immutably.toggle (array, index)
   );
 }
 
 /**************************************/
-export default Immutably;
+export default immutably;
