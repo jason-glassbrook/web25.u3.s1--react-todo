@@ -4,11 +4,23 @@
   A set of helper functions for "mutating" immutable values.
 *******************************************************************************/
 
-export const toggle = (value) => (!value);
+/// imports ///
+import iffy from '../iffy';
+
+/// exports ///
+export const toggle = (x) => {
+  if (iffy.boolean (x)) {
+    return (!x);
+  } else {
+    console.warn (`The value you're toggling isn't boolean.`);
+    console.warn (`Returning the value as-is.`, x);
+    return (x);
+  }
+};
 
 export class immutably {
   // constructor () {
-  //   console.log ('--> constructing immutably is unnecessary <--');
+  //   console.warn ('--> constructing immutably is unnecessary <--');
   // }
 
   /***************************************
