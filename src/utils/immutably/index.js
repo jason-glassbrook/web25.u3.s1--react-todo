@@ -1,5 +1,5 @@
 /*******************************************************************************
-  Immutably
+  immutably
 --------------------------------------------------------------------------------
   A set of helper functions for "mutating" immutable values.
 *******************************************************************************/
@@ -8,7 +8,7 @@ export const toggle = (value) => (!value);
 
 export class immutably {
   // constructor () {
-  //   console.log ('--> constructing Immutably is unnecessary <--');
+  //   console.log ('--> constructing immutably is unnecessary <--');
   // }
 
   /***************************************
